@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire</title>
+    <style>
+        .center-button {
+            text-align: center;
+        }
+        form {
+            padding: 38px;
+            margin: -2px;
+            background: beige;
+            width: 307px;
+            position: absolute;
+            right: 523px;
+        }
+        input, textarea {
+            padding: 4px;
+            width: 254px;
+        }
+        button {
+            padding: 6px;
+            margin: 27px;
+            width: 174px;
+            background: antiquewhite;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Formulaire</h1>
+   <form action="ajoutClub.php" method="POST">
+
+        <div>
+            <label for="id">ID :</label>
+            <input type="text" id="id" name="id" required>
+        </div>
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div>
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required>
+        </div>
+        <div>
+            <label for="domaine">Domaine :</label>
+            <input type="text" id="domaine" name="domaine" required>
+        </div>
+        <div class="center-button">
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+</body>
+</html>
